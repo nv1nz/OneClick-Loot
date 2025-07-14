@@ -1,5 +1,5 @@
 /* One Click Loots – Client Script */
-const API_URL = 'cached-deals.json';
+const API_URL = "https://nv1nz.github.io/OneClick-Loot/cached-deals.json";
 const PAGE_SIZE = 30;
 
 let state = {
