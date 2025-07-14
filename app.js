@@ -1,5 +1,5 @@
 /* One Click Loots – Client Script */
-const API_URL = 'https://www.gamerpower.com/api/giveaways'; // Free‑game API
+const API_URL = 'cached-deals.json';
 const PAGE_SIZE = 30;
 
 let state = {
