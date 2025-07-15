@@ -2,7 +2,10 @@
 const fs   = require('fs');
 const https = require('https');
 
-https.get('https://www.gamerpower.com/api/giveaways', res => {
+/*  🔥 CHANGE: added ?limit=100  */
+const API_URL = 'https://www.gamerpower.com/api/giveaways?limit=100';
+
+https.get(API_URL, res => {
   let data = '';
   res.on('data', chunk => (data += chunk));
   res.on('end', () => {
