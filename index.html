@@ -1,69 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- SEO BASICS -->
-    <meta charset="UTF-8">
-    <title>One Click Loots – Never Miss a Free Game</title>
-    <meta name="description" content="Automatically find and claim free and discounted games from Steam, Epic Games, GOG, and more. Get deal info, countdown timers, and one‑click links.">
-    <link rel="canonical" href="https://yourdomain.com/">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEO BASICS -->
+  <meta charset="UTF-8" />
+  <title>One Click Loots – Never Miss a Free Game</title>
+  <meta name="description" content="Automatically find and claim free and discounted games from Steam, Epic Games, GOG, and more. Get deal info, countdown timers, and one‑click links." />
+  <link rel="canonical" href="https://nv1nz.github.io/OneClick-Loot/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- SOCIAL CARDS -->
-    <meta property="og:title" content="One Click Loots">
-    <meta property="og:description" content="Never miss free & discounted games again.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourdomain.com/">
-    <meta property="og:image" content="https://yourdomain.com/og-cover.png">
-    <meta name="twitter:card" content="summary_large_image">
+  <!-- SOCIAL CARDS -->
+  <meta property="og:title" content="One Click Loots" />
+  <meta property="og:description" content="Never miss free & discounted games again." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nv1nz.github.io/OneClick-Loot/" />
+  <meta property="og:image" content="https://nv1nz.github.io/OneClick-Loot/og-cover.png" />
+  <meta name="twitter:card" content="summary_large_image" />
 
-    <!-- FAVICON -->
-    <link rel="icon" href="favicon.ico">
+  <!-- STYLE -->
+  <link rel="stylesheet" href="styles.css" />
 
-    <!-- STYLE -->
-    <link rel="stylesheet" href="styles.css">
-
-    <!-- STRUCTURED DATA -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "One Click Loots",
-      "url": "https://yourdomain.com/"
-    }
-    </script>
+  <!-- STRUCTURED DATA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "One Click Loots",
+    "url": "https://nv1nz.github.io/OneClick-Loot/"
+  }
+  </script>
 </head>
 <body>
-    <!-- NAVIGATION -->
-    <header id="navbar">
-        <h1 id="brand">One Click Loots</h1>
-        <nav>
-            <input type="search" id="search" placeholder="Search games…">
-            <select id="platformFilter">
-                <option value="">All Platforms</option>
-                <option value="steam">Steam</option>
-                <option value="epic-games-store">Epic Games</option>
-                <option value="gog">GOG</option>
-                <option value="itch.io">itch.io</option>
-            </select>
-        </nav>
-    </header>
+  <!-- NAVIGATION BAR -->
+  <header id="navbar">
+    <h1 id="brand">One Click Loots</h1>
+    <nav>
+      <input type="search" id="search" placeholder="Search games…" />
+      <select id="platformFilter">
+        <option value="">All Platforms</option>
+        <option value="steam">Steam</option>
+        <option value="epic">Epic Games</option>
+        <option value="gog">GOG</option>
+        <option value="itch">itch.io</option>
+      </select>
+    </nav>
+  </header>
 
-    <!-- GRID -->
-    <main id="grid"></main>
-    <div id="sentinel"></div>
+  <!-- POPULAR‑GAMES BANNER is injected by app.js if needed -->
 
-    <!-- TEMPLATES -->
-    <template id="card-template">
-        <article class="card">
-            <img class="cover" loading="lazy" />
-            <div class="overlay">
-                <span class="deal-type"></span>
-                <time class="countdown"></time>
-                <a class="claim-btn" target="_blank" rel="noopener">Claim</a>
-            </div>
-        </article>
-    </template>
+  <!-- GRID CONTAINER -->
+  <main id="grid"></main>
+  <div id="sentinel"></div>
 
-    <script src="app.js" defer></script>
+  <!-- CARD TEMPLATE -->
+  <template id="card-template">
+    <article class="card">
+      <img class="cover" loading="lazy" />
+      <div class="overlay">
+        <span class="deal-type"></span>
+        <time class="countdown"></time>
+        <a class="claim-btn" target="_blank" rel="noopener">Claim</a>
+      </div>
+    </article>
+  </template>
+
+  <!-- CLIENT SCRIPT -->
+  <script src="app.js" defer></script>
 </body>
 </html>
