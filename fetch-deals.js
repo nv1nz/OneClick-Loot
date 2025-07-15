@@ -3,7 +3,7 @@ const fs   = require('fs');
 const https = require('https');
 
 /*  🔥 CHANGE: added ?limit=100  */
-const API_URL = 'https://www.gamerpower.com/api/giveaways?limit=100';
+const API_URL = 'https://www.gamerpower.com/api/giveaways?platform=steam,epic,gog&limit=100';
 
 https.get(API_URL, res => {
   let data = '';
