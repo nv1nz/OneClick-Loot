@@ -3,11 +3,12 @@ const API_URL   = "https://nv1nz.github.io/OneClick-Loot/cached-deals.json";
 const PAGE_SIZE = 100;
 
 const popularKeywords = [
-  'gta', 'fortnite', 'witcher', 'far cry', 'hitman',
+  'gta 5', 'fortnite', 'witcher', 'far cry', 'hitman',
   'tomb raider', 'assassin', 'metro', 'lego',
   'watch dogs', 'batman', 'just cause', 'payday',
   'sims', 'mass effect', 'dead space', 'mad max',
-  'cyberpunk', 'subnautica', 'portal', 'fifa', 'nba', 'call of duty'
+  'cyberpunk', 'subnautica', 'portal', 'fifa', 'nba','
+Time Loader', 'call of duty'
 ];
 
 let state = { allDeals: [], filtered: [], page: 0 };
